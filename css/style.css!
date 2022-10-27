@@ -1,0 +1,183 @@
+* checked
+.checkbox-wrapper {
+  position: relative;
+}
+
+.modal-checkbox-label {
+  display: block;
+
+  margin-top: 20px;
+  margin-left: 14px;
+  padding-left: 23px;
+  position: relative;
+}
+
+.modal-checkbox-label::before {
+  width: 16px;
+  height: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.modal-chekbox-item:checked+.modal-checkbox-label::before {
+  background-image: url(../images/checkbox.svg);
+  background-color: var(--secondary-color-text);
+  border-color: var(--secondary-color-text);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-chekbox-item {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+*/
+/* .modal-chekbox-item {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* .checkbox-text-item {
+  margin: 0;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 1);
+}
+
+.costom-checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  cursor: pointer; */
+
+
+
+/* } */
+
+.modal-checkbox-label {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+
+  transition: color background-color;
+}
+
+.checkbox-icon {
+  opacity: 0;
+}
+
+.modal-chekbox-item:checked+.modal-checkbox-label .costom-checkbox .checkbox-icon {
+  opacity: 1;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.modal-checkbox-label {
+  display: block;
+
+  margin-top: 20px;
+  margin-left: 14px;
+  padding-left: 23px;
+  position: relative;
+}
+
+.modal-checkbox-label::before {
+  width: 16px;
+  height: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.modal-chekbox-item:checked+.modal-checkbox-label::before {
+  background-image: url(../images/checkbox.svg);
+  background-color: var(--secondary-color-text);
+  border-color: var(--secondary-color-text);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-chekbox-item {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-chekbox-item {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.checkbox-text-item {
+  margin: 0;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 1);
+}
+
+.costom-checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  cursor: pointer;
+
+
+
+}
+
+.modal-checkbox-label {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+
+  transition: color background-color;
+}
+
+.checkbox-icon {
+  opacity: 0;
+}
+
+.modal-chekbox-item:checked+.modal-checkbox-label .costom-checkbox .checkbox-icon {
+  opacity: 1;
+}
+
+.modal-chekbox-item:checked+.modal-checkbox-label .costom-checkbox {
+  background-color: var(--secondary-color-text);
+  border-color: var(--secondary-color-text);
+
+}
+
+
+
+ <svg class="checkbox-icon">
+                        <use href="./images/sprite.svg##icon-Vector-6"></use>
+                    </svg>
