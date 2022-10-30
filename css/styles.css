@@ -412,7 +412,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
   transition-duration: 250ms;
-  transition-property: background-color;
+  transition-property: background-color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
